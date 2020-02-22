@@ -1,324 +1,55 @@
 {
-    "content_providers": [
-        {
-            "name": "ymail",
-            "isConnected": false
-        },
-        {
-            "name": "flickr",
-            "isConnected": false
-        },
-        {
-            "name": "gdrive",
-            "isConnected": false
-        },
-        {
-            "name": "facebook",
-            "isConnected": false
-        },
-        {
-            "name": "dropbox",
-            "isConnected": false
-        },
-        {
-            "name": "tripod",
-            "isConnected": false
-        },
-        {
-            "name": "amazon",
-            "isConnected": false
-        }
-    ],
-    "user_activity_profile": [{
-        "unsubscribe": {"unsubscribeList": []},
-        "userProfile": {"attributesList": [
-            {
-                "segment_inactivesince": "20200204",
-                "datasource": "MAIL",
-                "segment_activedays": "1",
-                "segment_previousid": "1",
-                "segment_id": "1",
-                "platform": "WEB_DESKTOP"
-            },
-            {
-                "segment_inactivesince": "20200204",
-                "datasource": "MAIL",
-                "segment_activedays": "6",
-                "segment_previousid": "2",
-                "segment_id": "2",
-                "platform": "WEB_MOBILE"
-            },
-            {
-                "segment_inactivesince": "20200204",
-                "datasource": "MAIL",
-                "segment_activedays": "7",
-                "segment_previousid": "2",
-                "segment_id": "2",
-                "platform": "OVERALL"
-            },
-            {
-                "segment_inactivesince": "20180413",
-                "datasource": "MAIL",
-                "segment_activedays": "0",
-                "segment_previousid": "0",
-                "segment_id": "0",
-                "platform": "NEWS"
-            },
-            {
-                "segment_inactivesince": "20180323",
-                "datasource": "MAIL",
-                "segment_activedays": "0",
-                "segment_previousid": "0",
-                "segment_id": "0",
-                "platform": "SEARCH"
-            },
-            {
-                "country": "Philippines",
-                "gender": "f",
-                "ageinterval": "AGE_25-34"
-            }
-        ]}
-    }],
-    "mail_settings": {
-        "web.searchSortBy": 2,
-        "web.autoSuggestHideFacebookFooter": false,
-        "web.mailTheme": "DEEP_PURPLE",
-        "web.collapsedSportRail": 0,
-        "xobni": {"xobnifiedState": "NONE"},
-        "web.lastObservedTimezone": "Asia/Singapore|Asia/Singapore",
-        "web.desktopNotification": 0,
-        "web.actionAfterMsgMove": 3,
-        "vacationPreferences": {
-            "messageBody": "",
-            "endDate": 0,
-            "enabled": false,
-            "startDate": 0
-        },
-        "disposableAddressesPrefix": {
-            "deaDomain": "yahoo.com",
-            "deaPrefix": ""
-        },
-        "web.systemTabs": [],
-        "web.ymv": 4,
-        "web.sportSelectedTeam": "",
-        "web.openedTabs": [],
-        "web.composeShowCc": false,
-        "deliveryBlockedSenders": {"senders": ["notifications@christianfilipina.com"]},
-        "web.blockImages": false,
-        "web.postcardTheme": "purple",
-        "web.emojiRecentlyUsed": [],
-        "web.expandedFolders": [],
-        "ymvMobile": 2,
-        "web.interstitialFrequency": 1580779032145,
-        "web.timezone": "",
-        "web.autoSuggestHideLinkedinFooter": false,
-        "web.showSmartViews": true,
-        "mobileweb.showImages": true,
-        "web.enableConversations": true,
-        "web.norrinOnboard": [
-            "mobileOnboardingCue,1559823810,0001",
-            "mobilePacNotificationCue,1573025633,0002",
-            "pacNotificationCue,1576039262,0005",
-            "photosCue,1576039059,0001",
-            "pushNotificationsCue,1580779069,0001",
-            "searchCue,1576039263,0001",
-            "settingsCue,1573115813,0001",
-            "starredCue,1577063099,0001",
-            "themesCueV3,1569214829,0001"
-        ],
-        "web.themeMode": "LIGHT",
-        "hasAds": true,
-        "web.keyTasksPanel": [],
-        "web.clientBuckets": [],
-        "web.mailTabs": false,
-        "web.ccOnSend": false,
-        "web.markAsReadInterval": 0,
-        "web.cancelClickOnHoverDeleteCount": 0,
-        "web.showUnsubscribeNotification": true,
-        "secureMode": false,
-        "web.stationeryTheme": "",
-        "web.useRichText": true,
-        "web.magicTriageUserVisits": [
-            false,
-            false,
-            false,
-            false,
-            false,
-            false,
-            false
-        ],
-        "web.suppressEmptyFolderVideo": 0,
-        "web.previousClientVersion": -1,
-        "web.peopleNotification": false,
-        "mobileweb.notifications": true,
-        "mailboxSize": 10420286,
-        "web.showCustomFolders": true,
-        "web.isUdbMigrationComplete": false,
-        "web.emailSubscriptions": [],
-        "mailOnBoard": [],
-        "web.importantNotification": false,
-        "web.confirmBeforeDelete": true,
-        "web.magicTriageTimestamp": 0,
-        "web.showCloudFilePermissionsDialog": true,
-        "web.composeShowBcc": false,
-        "messageFilters": {"filters": []},
-        "web.clientVersionHistory": "",
-        "web.numUnsubscribedItems": 0,
-        "web.composeFontFamily": "Helvetica Neue",
-        "web.composeFontSize": "16",
-        "web.enableTweet": false,
-        "web.bccOnSend": false,
-        "web.hideLinkedinReconnect": false,
-        "web.enableEnhancerLinkPreview": true,
-        "web.generalSnippet": true,
-        "web.addUnknownContact": true,
-        "web.showEmailHistory": true,
-        "web.mailPreviewPane": 0,
-        "web.unsubscribeTimestamp": 0,
-        "web.breakingNews": true,
-        "web.showAllSystemFolders": true,
-        "web.hideAd": false,
-        "web.msgsListDensity": 2
+    "savedSearches": {"savedSearch": []},
+    "userInfo": {
+        "openQuestionCount": 0,
+        "votingQuestionCount": 0,
+        "level": 1,
+        "created": "Jun 20, 2008 10:56:18 PM",
+        "bestAnswerPercentage": 0,
+        "bestAnswerCount": 0,
+        "points": 114,
+        "totalQuestionCount": 2,
+        "totalAnswerCount": 0,
+        "resolvedQuestionCount": 2,
+        "nickname": "ayen",
+        "starsReceived": 0,
+        "lang": "en-AU"
     },
-    "recent_searches": [
-        {
-            "lastQueriedTime": 1581293930,
-            "mailboxid": "VjN-4AfhunCcMfRosUzKbmOvhXg1ChFV0yQ62OzhrxCeuKRIGGYYuK6rzj0Kw3rvGMEqAVSiK7lgEWkicfikPpOuxxh-J5C6LyUnkpuuSevalNc",
-            "contentId": "smtp:padme.darth07@yahoo.com",
-            "frequency": 3,
-            "order": "time"
-        },
-        {
-            "lastQueriedTime": 1577066291,
-            "query": "jojemiedy@gmail.com",
-            "mailboxid": "VjN-4AfhunCcMfRosUzKbmOvhXg1ChFV0yQ62OzhrxCeuKRIGGYYuK6rzj0Kw3rvGMEqAVSiK7lgEWkicfikPpOuxxh-J5C6LyUnkpuuSevalNc",
-            "frequency": 1,
-            "order": "time"
-        },
-        {
-            "lastQueriedTime": 1576039317,
-            "query": "MYNIMO",
-            "mailboxid": "VjN-4AfhunCcMfRosUzKbmOvhXg1ChFV0yQ62OzhrxCeuKRIGGYYuK6rzj0Kw3rvGMEqAVSiK7lgEWkicfikPpOuxxh-J5C6LyUnkpuuSevalNc",
-            "frequency": 2,
-            "order": "time"
-        },
-        {
-            "lastQueriedTime": 1576039304,
-            "query": "IRENE RESUME",
-            "mailboxid": "VjN-4AfhunCcMfRosUzKbmOvhXg1ChFV0yQ62OzhrxCeuKRIGGYYuK6rzj0Kw3rvGMEqAVSiK7lgEWkicfikPpOuxxh-J5C6LyUnkpuuSevalNc",
-            "frequency": 1,
-            "order": "time"
-        },
-        {
-            "lastQueriedTime": 1576039262,
-            "query": "RESUME",
-            "mailboxid": "VjN-4AfhunCcMfRosUzKbmOvhXg1ChFV0yQ62OzhrxCeuKRIGGYYuK6rzj0Kw3rvGMEqAVSiK7lgEWkicfikPpOuxxh-J5C6LyUnkpuuSevalNc",
-            "frequency": 1,
-            "order": "time"
-        },
-        {
-            "lastQueriedTime": 1576039065,
-            "query": "JOYCE",
-            "mailboxid": "VjN-4AfhunCcMfRosUzKbmOvhXg1ChFV0yQ62OzhrxCeuKRIGGYYuK6rzj0Kw3rvGMEqAVSiK7lgEWkicfikPpOuxxh-J5C6LyUnkpuuSevalNc",
-            "frequency": 1,
-            "order": "time"
-        }
-    ],
-    "accounts": [{
-        "isSending": true,
-        "createTime": 0,
-        "isPrimary": true,
-        "isSelected": true,
-        "linkedAccounts": [],
-        "id": "1",
-        "priority": 1000,
-        "type": "FREE",
-        "authType": "NONE",
-        "email": "iranzyouth_moonbeam@yahoo.com",
-        "accountVerified": true,
-        "status": "ENABLED"
-    }],
-    "saved_searches": [
-        {
-            "types": ["FLAG"],
-            "query": "is:unread",
-            "name": "Unread",
-            "id": "s1",
-            "priority": 500
-        },
-        {
-            "types": ["FLAG"],
-            "query": "is:starred",
-            "name": "Starred",
-            "id": "s2",
-            "priority": 500
-        },
-        {
-            "types": ["CLASSIFICATION"],
-            "query": "is:personal",
-            "name": "People",
-            "decorations": [{
-                "id": "PE",
-                "type": "NORMAL"
-            }],
-            "id": "s3",
-            "priority": 501
-        },
-        {
-            "types": ["CLASSIFICATION"],
-            "query": "is:social",
-            "name": "Social",
-            "decorations": [{
-                "id": "SO",
-                "type": "NORMAL"
-            }],
-            "id": "s4",
-            "priority": 501
-        },
-        {
-            "types": ["CLASSIFICATION"],
-            "query": "is:travel",
-            "name": "Travel",
-            "decorations": [{
-                "id": "TR",
-                "type": "NORMAL"
-            }],
-            "id": "s5",
-            "priority": 501
-        },
-        {
-            "types": ["CLASSIFICATION"],
-            "query": "is:shopping",
-            "name": "Shopping",
-            "decorations": [{
-                "id": "SH",
-                "type": "NORMAL"
-            }],
-            "id": "s6",
-            "priority": 501
-        },
-        {
-            "types": ["CLASSIFICATION"],
-            "query": "is:financial",
-            "name": "Finance",
-            "decorations": [{
-                "id": "FI",
-                "type": "NORMAL"
-            }],
-            "id": "s7",
-            "priority": 501
-        },
-        {
-            "types": ["FILTER"],
-            "accountIds": ["1"],
-            "query": "decoId:OOS acctId:1",
-            "name": "OOS",
-            "decorations": [{
-                "id": "F26",
-                "type": "FOLDER"
-            }],
-            "id": "fOOS",
-            "priority": 1000
-        }
-    ]
+    "ugcLinks": [{"link": "https://answers.yahoo.com/download/a9bf71e7-996c-4297-b8fa-2516102758c9/yahoo-answers-datapack-2020-02-10.zip"}],
+    "discoverStreamPreference": {
+        "includeNetworkBestAnswers": "No",
+        "includeQuestionsRatedByContacts": "No",
+        "includeQuestionsAskedByContacts": "No",
+        "includeQuestionsAnsweredByContacts": "No",
+        "includeQuestionsFollowedByContacts": "No",
+        "includePopularQuestions": "Yes"
+    },
+    "preference": {
+        "restrictNetwork": "everyone",
+        "allowEmailContact": "No",
+        "emailSavedSearches": "No",
+        "restrictActivity": "everyone",
+        "canAddAsFan": "Yes",
+        "emailNewAnswer": "Yes",
+        "emailFan": "Yes",
+        "emailQuestionFromContacts": "Yes",
+        "emailNews": "No",
+        "allowIMContact": "No"
+    },
+    "notificationPreference": {
+        "ratesAnswer": "Yes",
+        "answersQuestion": "Yes",
+        "bestAnswerForFollowedQuestion": "Yes",
+        "newAnswerInFollowedQuestion": "Yes",
+        "followsQuestion": "Yes",
+        "bestAnswerAwarded": "Yes"
+    },
+    "answersStreamPreference": {
+        "savedSearches": [],
+        "includeQuestionsBestAnswered": "Yes",
+        "includeQuestionsFromAllCategories": "Yes",
+        "includeQuestionsAskedByContacts": "No",
+        "categories": [],
+        "includeRecommendedQuestions": "No"
+    }
 }

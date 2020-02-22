@@ -1,41 +1,28 @@
-1. Categories of personal information Yahoo Mail collects:
-   Yahoo Mail collects and uses
-      * Technical Identifiers
-      * Geolocation Information
+1. Categories of personal information Answers collects:
+   Answers collects and uses
       * Contact Information
+      * Technical Identifiers
       * Internet or Electronic Network Activity Information
-      * Government Identifiers
-      * Financial Identifiers
-      * Commercial Information
       * Content Inferences
-      * Non-Advertising or Non-Content Inferences
 
-2. Categories of sources of personal information Yahoo Mail uses:
-   Yahoo Mail collects and/or uses personal information from
+2. Categories of sources of personal information Answers uses:
+   Answers collects and/or uses personal information from
       * Verizon Media websites and apps
-      * External Party Data Partners
+      * Verizon Media Analytics Services
 
-3. Reasons Yahoo Mail collects or uses personal information:
-   Yahoo Mail collects and uses your personal information for
-      * Performing services on behalf of Verizon Media
+3. Reasons Answers collects or uses personal information:
+   Answers collects and uses your personal information for
+      * Auditing
+      * Security
+      * Debugging
       * Short-term, transient use
+      * Performing services on behalf of Verizon Media
       * Research
       * Quality Assurance and Service Improvements
-      * Provide Contextual Advertising
 
-4. Categories of personal information Yahoo Mail discloses for business purposes:
-   Yahoo Mail discloses
-      * Technical Identifiers
-   With
-      * Application Providers
-      * Content Providers
+4. Categories of personal information Answers discloses for business purposes:
+   Answers does not disclose your personal information for business purposes.
 
-5. Categories of personal information Yahoo Mail shares for commercial purposes:
-   Yahoo Mail shares
-      * Technical Identifiers
-      * Contact Information
-   With
-      * Content Providers
-   For
-      * Provide Contextual Advertising
+5. Categories of personal information Answers shares for commercial purposes:
+   Answers does not share your personal information for commercial purposes.
 
