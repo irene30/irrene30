@@ -1,0 +1,583 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "categoryData": {
+        "thirdParty": ["Content Providers"],
+        "sharedData": [
+            "Technical Identifiers",
+            "Contact Information"
+        ],
+        "businessPurpose": [
+            "Performing services on behalf of Verizon Media",
+            "Short-term, transient use",
+            "Research",
+            "Quality Assurance and Service Improvements"
+        ],
+        "disclosedData": ["Technical Identifiers"],
+        "collectedData": [
+            "Technical Identifiers",
+            "Geolocation Information",
+            "Contact Information",
+            "Internet or Electronic Network Activity Information",
+            "Government Identifiers",
+            "Financial Identifiers",
+            "Commercial Information",
+            "Content Inferences",
+            "Non-Advertising or Non-Content Inferences"
+        ],
+        "serviceProvider": [
+            "Application Providers",
+            "Content Providers"
+        ],
+        "source": [
+            "Verizon Media websites and apps",
+            "External Party Data Partners"
+        ],
+        "commercialPurpose": ["Provide Contextual Advertising"]
+    },
+    "schemaType": "subjectAccessRequest",
+    "description": "",
+    "title": "Yahoo Mail Data",
+    "properties": {
+        "content_providers": {
+            "description": "Social networks or cloud storage providers that you may have linked to Yahoo Mail",
+            "type": "array",
+            "title": "Social networks and cloud storage providers",
+            "items": {
+                "title": "Accounts",
+                "type": "object",
+                "properties": {
+                    "isConnected": {
+                        "type": "boolean",
+                        "title": "Whether account has been connected"
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "Account name"
+                    }
+                }
+            }
+        },
+        "user_activity_profile": {
+            "description": "Data about your usage of Mail",
+            "type": "array",
+            "title": "Your usage segments in Mail",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "unsubscribe": {
+                        "type": "object",
+                        "title": "Unsubcribed email addresses",
+                        "properties": {"unsubscribeList": {
+                            "type": "array",
+                            "title": "Email addresses from which you have unsubscribed using the unsubscribe tool"
+                        }}
+                    },
+                    "userProfile": {
+                        "description": "Data about which clients, operating systems, etc. that you have used to access Mail",
+                        "type": "object",
+                        "title": "Usage segment",
+                        "properties": {"attributesList": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "segment_inactivesince": {
+                                        "type": "string",
+                                        "title": "Date when you were last active in this segment"
+                                    },
+                                    "segment_activedays": {
+                                        "type": "string",
+                                        "title": "Number of days you were active in this segment within the last 30"
+                                    },
+                                    "datasource": {
+                                        "description": "Application or feature used in this segment",
+                                        "type": "string",
+                                        "title": "Source of data"
+                                    },
+                                    "segment_id": {
+                                        "type": "string",
+                                        "title": "Internal ID for this segment"
+                                    },
+                                    "platform": {
+                                        "examples": ["WEB_DESKTOP"],
+                                        "description": "Client platform used in this segment",
+                                        "type": "string",
+                                        "title": "Platform"
+                                    }
+                                }
+                            }
+                        }}
+                    }
+                }
+            }
+        },
+        "mail_settings": {
+            "description": "",
+            "type": "object",
+            "title": "Options and data from Yahoo Mail settings",
+            "properties": {
+                "web.useRichText": {
+                    "type": "boolean",
+                    "title": "Whether to use rich text mode when composing email"
+                },
+                "web.searchSortBy": {
+                    "type": "integer",
+                    "title": "Sort order for search results"
+                },
+                "web.magicTriageUserVisits": {
+                    "web.autoSuggestHideFacebookFooter": {
+                        "type": "boolean",
+                        "title": "Whether to show the Facebook connection cue"
+                    },
+                    "web.mailTheme": {
+                        "type": "string",
+                        "title": "Selected background theme"
+                    },
+                    "web.collapsedSportRail": {
+                        "type": "integer",
+                        "title": "Whether to collapse the sports feature by default"
+                    },
+                    "web.desktopNotification": {
+                        "type": "integer",
+                        "title": "Whether to show desktop notifications"
+                    },
+                    "xobni": {
+                        "type": "object",
+                        "properties": {"xobnifiedState": {
+                            "examples": ["PROCESSING_COMPLETE"],
+                            "type": "string",
+                            "title": "State of process that extracts contact information from emails"
+                        }}
+                    },
+                    "web.actionAfterMsgMove": {
+                        "type": "integer",
+                        "title": "Whether to switch back to the message list after moving an email"
+                    },
+                    "type": "array",
+                    "web.systemTabs": {
+                        "type": "array",
+                        "title": "Tabs that are opened by default"
+                    },
+                    "web.sportSelectedTeam": {
+                        "type": "string",
+                        "title": "Last selected sports team"
+                    },
+                    "web.composeShowCc": {
+                        "type": "boolean",
+                        "title": "Whether to show the CC field when composing emails"
+                    },
+                    "deliveryBlockedSenders": {
+                        "type": "object",
+                        "properties": {"senders": {
+                            "type": "array",
+                            "title": "Email addresses you have blocked"
+                        }}
+                    },
+                    "web.blockImages": {
+                        "type": "boolean",
+                        "title": "Whether to show images when reading emails"
+                    },
+                    "web.postcardTheme": {
+                        "type": "string",
+                        "title": "Name of default stationery in classic Mail"
+                    },
+                    "web.emojiRecentlyUsed": {
+                        "type": "array",
+                        "title": "Recently used emoji"
+                    },
+                    "ymvMobile": {
+                        "type": "integer",
+                        "title": "Last used version of mobile web Mail"
+                    },
+                    "web.expandedFolders": {
+                        "type": "array",
+                        "title": "List of folders to expand by default"
+                    },
+                    "web.interstitialFrequency": {
+                        "type": "integer",
+                        "title": "How often to show the mobile web Mail cue"
+                    },
+                    "web.timezone": {
+                        "type": "string",
+                        "title": "Your selected timezone"
+                    },
+                    "web.showSmartViews": {
+                        "type": "boolean",
+                        "title": "Whether to show smart views"
+                    },
+                    "web.norrinOnboard": {
+                        "type": "array",
+                        "title": "On-boarding cues you have seen in new Mail"
+                    },
+                    "web.themeMode": {
+                        "examples": ["DARK"],
+                        "type": "string",
+                        "title": "How much of the user interface displays the current theme"
+                    },
+                    "hasAds": {
+                        "type": "boolean",
+                        "title": "Whether to show ads"
+                    },
+                    "web.clientBuckets": {
+                        "type": "array",
+                        "title": "Feature experiments that you are being shown"
+                    },
+                    "web.ccOnSend": {
+                        "type": "boolean",
+                        "title": "Whether to show the CC field when composing emails"
+                    },
+                    "web.markAsReadInterval": {
+                        "type": "integer",
+                        "title": "Number of seconds to wait before marking an email as read"
+                    },
+                    "web.cancelClickOnHoverDeleteCount": {"type": "integer"},
+                    "items": {
+                        "type": "boolean",
+                        "title": "Number of times magic triage feature was used"
+                    },
+                    "web.showUnsubscribeNotification": {
+                        "type": "boolean",
+                        "title": "Whether to show unsubscribe cue"
+                    },
+                    "secureMode": {"type": "boolean"},
+                    "web.previousClientVersion": {
+                        "type": "integer",
+                        "title": "Version of last web Mail client that you used"
+                    },
+                    "web.suppressEmptyFolderVideo": {
+                        "type": "integer",
+                        "title": "Whether to show a video when a folder is empty"
+                    },
+                    "web.peopleNotification": {
+                        "type": "boolean",
+                        "title": "Whether to show notifications for emails from people"
+                    },
+                    "mailboxSize": {
+                        "type": "integer",
+                        "title": "Size of your mailbox"
+                    },
+                    "mobileweb.notifications": {
+                        "type": "boolean",
+                        "title": "Whether to show notifications in mobile web Mail"
+                    },
+                    "web.isUdbMigrationComplete": {"type": "boolean"},
+                    "web.emailSubscriptions": {
+                        "type": "array",
+                        "title": "Email providers to which you have subscribed"
+                    },
+                    "mailOnBoard": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "title": "On-boarding cues that have been shown"
+                        }
+                    },
+                    "web.magicTriageTimestamp": {
+                        "type": "integer",
+                        "title": "Last time magic triage feature was used"
+                    },
+                    "web.composeShowBcc": {
+                        "type": "boolean",
+                        "title": "Whether to show the BCC field when composing emails"
+                    },
+                    "messageFilters": {
+                        "title": "Filters that automatically sort incoming emails into folders",
+                        "type": "object",
+                        "properties": {"filters": {"type": "array"}}
+                    },
+                    "web.numUnsubscribedItems": {
+                        "type": "integer",
+                        "title": "Number of unsubscribed mailing lists"
+                    },
+                    "web.composeFontFamily": {
+                        "type": "string",
+                        "title": "Default font for new emails"
+                    },
+                    "web.enableTweet": {
+                        "type": "boolean",
+                        "title": "Whether to include latest tweet in sent email"
+                    },
+                    "web.bccOnSend": {
+                        "type": "boolean",
+                        "title": "Whether to show the BCC field when composing emails"
+                    },
+                    "web.hideLinkedinReconnect": {
+                        "type": "boolean",
+                        "title": "Whether to show LinkedIn reconnect prompt"
+                    },
+                    "web.generalSnippet": {
+                        "type": "boolean",
+                        "title": "Whether to show email snippets in the list view"
+                    },
+                    "web.addUnknownContact": {"type": "boolean"},
+                    "web.showEmailHistory": {
+                        "type": "boolean",
+                        "title": "Whether to show email history"
+                    },
+                    "web.mailPreviewPane": {
+                        "type": "integer",
+                        "title": "Preview pane mode"
+                    },
+                    "web.breakingNews": {
+                        "type": "boolean",
+                        "title": "Whether to show breaking news"
+                    },
+                    "web.showAllSystemFolders": {
+                        "type": "boolean",
+                        "title": "Whether to show all system folders"
+                    },
+                    "web.msgsListDensity": {
+                        "type": "integer",
+                        "title": "Message list spacing"
+                    }
+                },
+                "web.enableEnhancerLinkPreview": {
+                    "type": "boolean",
+                    "title": "Whether to insert additional information about links in an email"
+                },
+                "web.showCustomFolders": {
+                    "type": "boolean",
+                    "title": "Whether to expand custom folders"
+                },
+                "web.lastObservedTimezone": {
+                    "type": "string",
+                    "title": "Last timezone from which you signed in"
+                },
+                "web.autoSuggestHideLinkedinFooter": {
+                    "type": "boolean",
+                    "title": "Whether to show the LinkedIn connection cue"
+                },
+                "vacationPreferences": {
+                    "type": "object",
+                    "title": "Automatic vacation response",
+                    "properties": {
+                        "messageBody": {
+                            "type": "string",
+                            "title": "Vacation response message"
+                        },
+                        "endDate": {
+                            "type": "integer",
+                            "title": "End date"
+                        },
+                        "startDate": {
+                            "type": "integer",
+                            "title": "Start date"
+                        },
+                        "enabled": {
+                            "type": "boolean",
+                            "title": "Whether to send a vacation response"
+                        }
+                    }
+                },
+                "web.importantNotification": {
+                    "type": "boolean",
+                    "title": "Whether important email notifications are enabled"
+                },
+                "web.unsubscribeTimestamp": {
+                    "type": "integer",
+                    "title": "Last time you used the unsubscribe tool"
+                },
+                "mobileweb.showImages": {
+                    "type": "boolean",
+                    "title": "Whether to show images when reading emails in mobile web Mail"
+                },
+                "web.confirmBeforeDelete": {
+                    "type": "boolean",
+                    "title": "Whether to show a confirmation dialog before deleting emails"
+                },
+                "web.enableConversations": {
+                    "type": "boolean",
+                    "title": "Whether to group emails into conversations"
+                },
+                "disposableAddressesPrefix": {
+                    "type": "object",
+                    "properties": {
+                        "deaDomain": {
+                            "type": "string",
+                            "title": "Domain for your disposable email addresses"
+                        },
+                        "deaPrefix": {
+                            "type": "string",
+                            "title": "Base name for your disposable email addresses"
+                        }
+                    }
+                },
+                "web.showCloudFilePermissionsDialog": {
+                    "type": "boolean",
+                    "title": "Whether to show the cloud provider connection dialog"
+                },
+                "web.clientVersionHistory": {
+                    "type": "string",
+                    "title": "Versions of Mail clients you have recently used"
+                },
+                "web.keyTasksPanel": {
+                    "type": "array",
+                    "title": "On-boarding cues you have seen"
+                },
+                "web.ymv": {
+                    "type": "integer",
+                    "title": "Selected version of web Mail"
+                },
+                "web.openedTabs": {
+                    "type": "array",
+                    "title": "Currently opened tabs in web Mail"
+                },
+                "web.mailTabs": {
+                    "type": "boolean",
+                    "title": "Whether to open emails in multiple tabs"
+                },
+                "web.composeFontSize": {
+                    "type": "string",
+                    "title": "Default font size for new emails"
+                },
+                "web.hideAd": {
+                    "type": "boolean",
+                    "title": "Whether to hide ads"
+                },
+                "web.stationeryTheme": {
+                    "type": "string",
+                    "title": "Name of default stationery"
+                }
+            }
+        },
+        "recent_searches": {
+            "description": "",
+            "type": "array",
+            "title": "Recent search queries",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "lastQueriedTime": {
+                        "type": "integer",
+                        "title": "Last time this search was made"
+                    },
+                    "mailboxid": {
+                        "type": "string",
+                        "title": "Internal ID of the mailbox in which this search was made"
+                    },
+                    "intent": {
+                        "type": "string",
+                        "title": "Type of search query, e.g., 'people'"
+                    },
+                    "frequency": {
+                        "type": "integer",
+                        "title": "How often this search has been made"
+                    },
+                    "order": {
+                        "type": "string",
+                        "title": "Display order of search results, e.g., 'ascending'"
+                    }
+                }
+            }
+        },
+        "accounts": {
+            "description": "",
+            "type": "array",
+            "title": "Linked email accounts",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "sendingName": {
+                        "type": "string",
+                        "title": "Name to show in emails sent from this account"
+                    },
+                    "signatureActive": {
+                        "type": "boolean",
+                        "title": "Whether to include a signature in emails sent from this account"
+                    },
+                    "isSending": {
+                        "type": "boolean",
+                        "title": "Whether this is the default account for sending email"
+                    },
+                    "signature": {
+                        "type": "string",
+                        "title": "Signature to include when sending emails"
+                    },
+                    "description": {
+                        "type": "string",
+                        "title": "Display name for this account"
+                    },
+                    "priority": {
+                        "description": "Internal value used to sort this account relative to others",
+                        "type": "integer",
+                        "title": "Sort position"
+                    },
+                    "type": {
+                        "examples": ["FREE"],
+                        "type": "string",
+                        "title": "Account type, e.g., 'free'"
+                    },
+                    "createTime": {
+                        "type": "integer",
+                        "title": "Time this account was created"
+                    },
+                    "isPrimary": {
+                        "type": "boolean",
+                        "title": "Whether this is the primary account"
+                    },
+                    "isSelected": {
+                        "type": "boolean",
+                        "title": "Whether to select this account by default on sign-in"
+                    },
+                    "linkedAccounts": {
+                        "type": "array",
+                        "title": "Related accounts"
+                    },
+                    "id": {
+                        "type": "string",
+                        "title": "Internal ID for this account"
+                    },
+                    "authType": {
+                        "type": "string",
+                        "title": "Type of authentication used to access this account"
+                    },
+                    "accountVerified": {
+                        "type": "boolean",
+                        "title": "Whether your ownership of this account has been verified"
+                    },
+                    "email": {
+                        "type": "string",
+                        "title": "Email address"
+                    },
+                    "status": {
+                        "type": "string",
+                        "title": "Account status, e.g., 'enabled'"
+                    }
+                }
+            }
+        },
+        "saved_searches": {
+            "description": "",
+            "type": "array",
+            "title": "Saved search queries",
+            "items": {
+                "type": "object",
+                "title": "Saved search query",
+                "properties": {
+                    "types": {
+                        "title": "Search types",
+                        "type": "array",
+                        "items": {"title": "Internal data type queried by this saved search"}
+                    },
+                    "query": {
+                        "type": "string",
+                        "title": "Search query"
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "Saved search name"
+                    },
+                    "id": {
+                        "type": "string",
+                        "title": "Internal ID for this saved search"
+                    },
+                    "priority": {
+                        "type": "integer",
+                        "title": "Internal value to sort this saved search relative to others"
+                    }
+                }
+            }
+        }
+    },
+    "$id": "http://mail.yahoo.com/subject_schema_V1.json"
+}
