@@ -1,55 +1,9 @@
-{
-    "savedSearches": {"savedSearch": []},
-    "userInfo": {
-        "openQuestionCount": 0,
-        "votingQuestionCount": 0,
-        "level": 1,
-        "created": "Jun 20, 2008 10:56:18 PM",
-        "bestAnswerPercentage": 0,
-        "bestAnswerCount": 0,
-        "points": 114,
-        "totalQuestionCount": 2,
-        "totalAnswerCount": 0,
-        "resolvedQuestionCount": 2,
-        "nickname": "ayen",
-        "starsReceived": 0,
-        "lang": "en-AU"
-    },
-    "ugcLinks": [{"link": "https://answers.yahoo.com/download/a9bf71e7-996c-4297-b8fa-2516102758c9/yahoo-answers-datapack-2020-02-10.zip"}],
-    "discoverStreamPreference": {
-        "includeNetworkBestAnswers": "No",
-        "includeQuestionsRatedByContacts": "No",
-        "includeQuestionsAskedByContacts": "No",
-        "includeQuestionsAnsweredByContacts": "No",
-        "includeQuestionsFollowedByContacts": "No",
-        "includePopularQuestions": "Yes"
-    },
-    "preference": {
-        "restrictNetwork": "everyone",
-        "allowEmailContact": "No",
-        "emailSavedSearches": "No",
-        "restrictActivity": "everyone",
-        "canAddAsFan": "Yes",
-        "emailNewAnswer": "Yes",
-        "emailFan": "Yes",
-        "emailQuestionFromContacts": "Yes",
-        "emailNews": "No",
-        "allowIMContact": "No"
-    },
-    "notificationPreference": {
-        "ratesAnswer": "Yes",
-        "answersQuestion": "Yes",
-        "bestAnswerForFollowedQuestion": "Yes",
-        "newAnswerInFollowedQuestion": "Yes",
-        "followsQuestion": "Yes",
-        "bestAnswerAwarded": "Yes"
-    },
-    "answersStreamPreference": {
-        "savedSearches": [],
-        "includeQuestionsBestAnswered": "Yes",
-        "includeQuestionsFromAllCategories": "Yes",
-        "includeQuestionsAskedByContacts": "No",
-        "categories": [],
-        "includeRecommendedQuestions": "No"
-    }
-}
+{"searchPreferences": {
+    "openResults": "0",
+    "searchScan": "2",
+    "openResultsOverride": "",
+    "numResults": "8",
+    "userset": "0",
+    "safeSearch": "0",
+    "version": "1"
+}}

@@ -2,409 +2,190 @@
     "$schema": "http://json-schema.org/draft-06/schema#",
     "schemaType": "subjectAccessRequest",
     "categoryData": {
-        "thirdParty": ["Product does not share your personal information for commercial purposes"],
-        "sharedData": ["Product does not share your personal information for commercial purposes"],
+        "thirdParty": [
+            "Social Button Providers",
+            "Content Providers",
+            "Search External Parties",
+            "Voice and Digital Assistant Providers"
+        ],
+        "sharedData": [
+            "Technical Identifiers",
+            "Physical characteristics or description Information",
+            "Internet or Electronic Network Activity Information",
+            "Geolocation Information"
+        ],
         "businessPurpose": [
             "Auditing",
             "Security",
             "Debugging",
             "Short-term, transient use",
             "Performing services on behalf of Verizon Media",
-            "Research",
             "Quality Assurance and Service Improvements"
         ],
         "disclosedData": [
-            "Contact Information",
-            "Internet or Electronic Network Activity Information"
+            "Technical Identifiers",
+            "Physical characteristics or description Information",
+            "Internet or Electronic Network Activity Information",
+            "Geolocation Information",
+            "Audio, Electronic, Visual, Thermal, Olfactory, or Similar Information"
         ],
         "collectedData": [
             "Contact Information",
             "Technical Identifiers",
+            "Physical characteristics or description Information",
             "Internet or Electronic Network Activity Information",
-            "Content Inferences"
+            "Geolocation Information",
+            "Audio, Electronic, Visual, Thermal, Olfactory, or Similar Information"
         ],
-        "serviceProvider": ["Product does not disclose your personal information for business purposes"],
+        "serviceProvider": [
+            "Analytics Providers",
+            "Social Button Providers",
+            "Advertising External Parties",
+            "Content Providers",
+            "Search External Parties",
+            "Voice and Digital Assistant Providers"
+        ],
         "source": [
             "Verizon Media websites and apps",
-            "Verizon Media Analytics Services"
+            "External party websites and apps where Verizon Media technologies serves content or ads or measurement",
+            "External Party Data Partners"
         ],
-        "commercialPurpose": ["Product does not share your personal information for commercial purposes"]
+        "commercialPurpose": [
+            "Delivering Content and Ads",
+            "Associating User Activity",
+            "Provide VM Services",
+            "Provide Contextual Advertising",
+            "Provide Targeted Advertising",
+            "Provide Personalized Content"
+        ]
     },
-    "description": "Yahoo Answers user data including information and preferences",
-    "title": "Yahoo Answers GDPR Privacy Dashboard Subject Access Schema",
-    "definitions": {
-        "SavedSearchCollection": {
-            "additionalProperties": false,
-            "type": "object",
-            "properties": {"savedSearch": {
-                "description": "List of saved searches",
-                "type": "array",
-                "title": "Saved Searches",
-                "items": {"$ref": "#/definitions/SavedSearch"}
-            }}
-        },
-        "UserStreamAnswerPreference": {
-            "additionalProperties": false,
-            "type": "object",
-            "properties": {
-                "savedSearches": {
-                    "description": "Saved searches results to be included in answer stream",
-                    "type": "array",
-                    "title": "Included Saved Searches",
-                    "items": {"$ref": "#/definitions/SavedSearch"}
-                },
-                "includeQuestionsBestAnswered": {
-                    "description": "Preference to only include questions have best answer in answer stream",
-                    "type": "string",
-                    "title": "Only Include Questions Have Best Answer"
-                },
-                "includeQuestionsFromAllCategories": {
-                    "description": "Preference to only include all categories in answer stream",
-                    "type": "string",
-                    "title": "Include All Categories"
-                },
-                "includeQuestionsAskedByContacts": {
-                    "description": "Preference to include questions asked by my contacts in answer stream",
-                    "type": "string",
-                    "title": "Include Questions From My Network"
-                },
-                "categories": {
-                    "description": "Categories to be included in answer stream",
-                    "type": "array",
-                    "title": "Included Categories",
-                    "items": {"$ref": "#/definitions/Category"}
-                },
-                "includeRecommendedQuestions": {
-                    "description": "Preference to include recommended questions in answer stream",
-                    "type": "string",
-                    "title": "Include Recommended Questions For Me"
-                }
-            }
-        },
-        "User": {
-            "additionalProperties": false,
-            "type": "object",
-            "properties": {
-                "resume": {
-                    "description": "Description about yourself provided by you",
-                    "type": "string",
-                    "title": "About Me"
-                },
-                "openQuestionCount": {
-                    "description": "Number of open questions",
-                    "type": "integer",
-                    "title": "Open Question Count"
-                },
-                "votingQuestionCount": {
-                    "description": "Number of voting questions",
-                    "type": "integer",
-                    "title": "Voting Question Count"
-                },
-                "level": {
-                    "description": "Your level",
-                    "type": "integer",
-                    "title": "Level"
-                },
-                "created": {
-                    "description": "Date on which account was created",
-                    "type": "string",
-                    "title": "Account Creation Date"
-                },
-                "bestAnswerPercentage": {
-                    "description": "Percentage of your answers that are marked as best answers",
-                    "type": "integer",
-                    "title": "Best Answers Percentage"
-                },
-                "bestAnswerCount": {
-                    "description": "Number of best answers",
-                    "type": "integer",
-                    "title": "Best Answer Count"
-                },
-                "points": {
-                    "description": "Your points",
-                    "type": "integer",
-                    "title": "Points"
-                },
-                "totalQuestionCount": {
-                    "description": "Number of questions asked",
-                    "type": "integer",
-                    "title": "Questions Count"
-                },
-                "totalAnswerCount": {
-                    "description": "Number of answers provided",
-                    "type": "integer",
-                    "title": "Answers Count"
-                },
-                "resolvedQuestionCount": {
-                    "description": "Number of resolved questions",
-                    "type": "integer",
-                    "title": "Resolved Question Count"
-                },
-                "nickname": {
-                    "description": "Your nickname",
-                    "type": "string",
-                    "title": "Nickname"
-                },
-                "starsReceived": {
-                    "description": "Number of stars received",
-                    "type": "integer",
-                    "title": "Stars Received"
-                },
-                "lang": {
-                    "description": "Language settings for your account",
-                    "type": "string",
-                    "title": "Language"
-                }
-            }
-        },
-        "Category": {
-            "additionalProperties": false,
-            "type": "object",
-            "properties": {"name": {
-                "description": "Name of category",
-                "type": "string",
-                "title": "Category Name"
-            }}
-        },
-        "SavedSearch": {
-            "additionalProperties": false,
-            "type": "object",
-            "properties": {
-                "searchAnswersCount": {
-                    "description": "Search only questions with the specific number of answers",
-                    "type": "string",
-                    "title": "Search Number Of Answers"
-                },
-                "lastUpdatedDate": {
-                    "description": "Last update date of this saved search",
-                    "type": "string",
-                    "title": "Last Update On"
-                },
-                "keywords": {
-                    "description": "Search keywords",
-                    "type": "string",
-                    "title": "Keywords"
-                },
-                "excludeKeywords": {
-                    "description": "Words to excluded when searches",
-                    "type": "string",
-                    "title": "Excluded Keywords"
-                },
-                "searchScope": {
-                    "description": "Keyword match in 'All Q&A', only 'Questions' or only 'Answers'",
-                    "type": "string",
-                    "title": "Search Scope"
-                },
-                "exactPhrase": {
-                    "description": "Search exactly this phrase",
-                    "type": "string",
-                    "title": "Search Exact Phrase"
-                },
-                "name": {
-                    "description": "Name of saved search",
-                    "type": "string",
-                    "title": "Saved Search Name"
-                },
-                "searchDate": {
-                    "description": "Search content that is submitted within",
-                    "type": "string",
-                    "title": "Search Date"
-                },
-                "searchState": {
-                    "description": "Search only on questions in this status",
-                    "type": "string",
-                    "title": "Search Question Status"
-                },
-                "category": {
-                    "description": "Search only in this category",
-                    "type": "string",
-                    "title": "Search Category"
-                },
-                "filterLang": {
-                    "description": "Search only on content from this location",
-                    "type": "string",
-                    "title": "Location"
-                },
-                "createDate": {
-                    "description": "Date of created this saved search",
-                    "type": "string",
-                    "title": "Created On"
-                }
-            }
-        },
-        "UserStreamDiscoverPreference": {
-            "additionalProperties": false,
-            "type": "object",
-            "properties": {
-                "includeNetworkBestAnswers": {
-                    "description": "Preference to include questions have best answers from my contacts",
-                    "type": "string",
-                    "title": "Include Best Answer From My Contacts"
-                },
-                "includeQuestionsRatedByContacts": {
-                    "description": "Preference to include questions rate by contact",
-                    "type": "string",
-                    "title": "Include Questions Rate By Contact"
-                },
-                "includeQuestionsAskedByContacts": {
-                    "description": "Preference to include questions asked by contact",
-                    "type": "string",
-                    "title": "Include Questions Asked By Contact"
-                },
-                "includeQuestionsAnsweredByContacts": {
-                    "description": "Preference to include questions answered by contact",
-                    "type": "string",
-                    "title": "Include Questions Answered By Contact"
-                },
-                "includeQuestionsFollowedByContacts": {
-                    "description": "Preference to include questions follows by contact",
-                    "type": "string",
-                    "title": "Include Questions Follows By Contact"
-                },
-                "includePopularQuestions": {
-                    "description": "Preference to include popular questions in discover stream",
-                    "type": "string",
-                    "title": "Include Popular Questions"
-                }
-            }
-        },
-        "UserPreference": {
-            "additionalProperties": false,
-            "type": "object",
-            "properties": {
-                "restrictNetwork": {
-                    "description": "Visibility of my network information",
-                    "type": "string",
-                    "title": "Visibility Of My Network"
-                },
-                "allowEmailContact": {
-                    "description": "Whether answers community can contact me via email",
-                    "type": "string",
-                    "title": "Answers Community Can Contact Me Via Email"
-                },
-                "emailSavedSearches": {
-                    "description": "Email me when there are questions for my saved search",
-                    "type": "string",
-                    "title": "Email When There Are Questions For My Saved Search"
-                },
-                "restrictActivity": {
-                    "description": "Visibility of my questions and answers",
-                    "type": "string",
-                    "title": "Visibility Of My Questions And Answers"
-                },
-                "canAddAsFan": {
-                    "description": "Whether other users can follow me",
-                    "type": "string",
-                    "title": "Allow New Followers"
-                },
-                "emailNewAnswer": {
-                    "description": "Email me when my questions get new answers",
-                    "type": "string",
-                    "title": "Email When My Questions Get New Answers"
-                },
-                "emailFan": {
-                    "description": "Email me when someone becomes my follower",
-                    "type": "string",
-                    "title": "Email When Someone Becomes My Follower"
-                },
-                "emailQuestionFromContacts": {
-                    "description": "Email me when someone I follow ask a question",
-                    "type": "string",
-                    "title": "Email When Someone I Follow Ask A Question"
-                },
-                "emailNews": {
-                    "description": "Email me when there are new tips or helpful features",
-                    "type": "string",
-                    "title": "Email When There Are New Tips Or Helpful Features"
-                },
-                "allowIMContact": {
-                    "description": "Whether answers community can contact me via Yahoo Messenger",
-                    "type": "string",
-                    "title": "Answers Community Can Contact Me Via Yahoo Messenger"
-                }
-            }
-        },
-        "UserStreamNotificationPreference": {
-            "additionalProperties": false,
-            "type": "object",
-            "properties": {
-                "ratesAnswer": {
-                    "description": "Show on notify stream when anybody rates my answer",
-                    "type": "string",
-                    "title": "Notify Me When Anybody Rates My Answer"
-                },
-                "answersQuestion": {
-                    "description": "Show on notify stream when anybody answers my question",
-                    "type": "string",
-                    "title": "Notify Me When Anybody Answers My Question"
-                },
-                "bestAnswerForFollowedQuestion": {
-                    "description": "Show on notify stream when a question you follow has a best answer ",
-                    "type": "string",
-                    "title": "Notify Me When A Question You Follow Has A Best Answer Chosen"
-                },
-                "newAnswerInFollowedQuestion": {
-                    "description": "Show on notify stream when a question you follow has a new answer",
-                    "type": "string",
-                    "title": "Notify Me When A Question You Follow Has A New Answer"
-                },
-                "followsQuestion": {
-                    "description": "Show on notify stream when anybody follows my question",
-                    "type": "string",
-                    "title": "Notify Me When Anybody Follows My Question"
-                },
-                "bestAnswerAwarded": {
-                    "description": "Show on notify stream when anybody wins best answer",
-                    "type": "string",
-                    "title": "Notify Me When Anybody Wins Best Answer"
-                }
-            }
-        }
-    },
+    "description": "This is schema for User's past searches and User's Search Preferences",
+    "additionalProperties": false,
+    "title": "Search Subject Access Request schema",
     "properties": {
-        "savedSearches": {
-            "description": "Your saved searches",
-            "title": "Saved Searches",
-            "$ref": "#/definitions/SavedSearchCollection"
-        },
-        "userInfo": {
-            "description": "Information about yourself",
-            "title": "User information",
-            "$ref": "#/definitions/User"
-        },
-        "ugcLinks": {
-            "additionalItems": false,
+        "searchHistory": {
+            "description": "User's past searches.",
             "type": "array",
+            "title": "Search History",
             "items": [{
-                "description": "Link to download all questions and answers you created",
                 "type": "object",
-                "title": "Full Download Link",
-                "properties": {"link": {
-                    "format": "uri",
-                    "type": "string"
-                }}
+                "required": [
+                    "query",
+                    "timestamp"
+                ],
+                "properties": {
+                    "query": {
+                        "description": "A search query performed in the past.",
+                        "type": "string",
+                        "title": "Search query"
+                    },
+                    "clicks": {
+                        "description": "Results of the query that user clicked on.",
+                        "type": "array",
+                        "title": "Results clicked on",
+                        "items": [{
+                            "type": "object",
+                            "properties": {
+                                "resultTitle": {
+                                    "description": "Title of the result clicked on.",
+                                    "type": "string",
+                                    "title": "Result Title"
+                                },
+                                "resultUrl": {
+                                    "format": "url",
+                                    "description": "URL of the result clicked on.",
+                                    "type": "string",
+                                    "title": "Result URL"
+                                },
+                                "clickTime": {
+                                    "description": "Time the result was clicked on.",
+                                    "type": "string",
+                                    "title": "Result click time"
+                                }
+                            }
+                        }]
+                    },
+                    "timestamp": {
+                        "description": "Time of the search in UTC.",
+                        "type": "string",
+                        "title": "Time of the search"
+                    }
+                }
             }]
         },
-        "discoverStreamPreference": {
-            "description": "Preferences of the discover stream in Yahoo Answer homepage",
-            "title": "Discover Stream Preference",
-            "$ref": "#/definitions/UserStreamDiscoverPreference"
-        },
-        "preference": {
-            "description": "Your preferences",
-            "title": "User Preference",
-            "$ref": "#/definitions/UserPreference"
-        },
-        "notificationPreference": {
-            "description": "Preferences of the notification stream",
-            "title": "Notification Stream Preference",
-            "$ref": "#/definitions/UserStreamNotificationPreference"
-        },
-        "answersStreamPreference": {
-            "description": "Preferences of answers stream in Yahoo Answers homepage",
-            "title": "Answers Stream Preference",
-            "$ref": "#/definitions/UserStreamAnswerPreference"
+        "searchPreferences": {
+            "description": "User's Search Preferences",
+            "additionalProperties": false,
+            "type": "object",
+            "title": "Search Preferences",
+            "properties": {
+                "site": {
+                    "description": "Always take me to the site for the country I select.",
+                    "type": "string",
+                    "title": "Country preference"
+                },
+                "openResults": {
+                    "description": "Choose where search results open. [Values: '0' - 'In current tab'; '1' - 'In new tab']",
+                    "type": "string",
+                    "title": "Open search results"
+                },
+                "searchScan": {
+                    "description": "Alert me to websites indicated as potentially harmful. [Values: '0' - 'No alerts'; '2' - 'Alert me']",
+                    "type": "string",
+                    "title": "Search scan"
+                },
+                "selectedLanguages": {
+                    "description": "List of languages selected for search results.",
+                    "type": "array",
+                    "title": "Selected languages",
+                    "items": [{
+                        "description": "Language selected.",
+                        "type": "string",
+                        "title": "Language"
+                    }]
+                },
+                "openResultsOverride": {
+                    "description": "Override where search results open. [Values: '0' - 'In current tab'; '1' - 'In new tab']",
+                    "type": "string",
+                    "title": "Override for open search results"
+                },
+                "personalResults": {
+                    "description": "Personal results help you to find the relevant and important information from your Yahoo Mail. These results are shown only to you [Values: '0' - 'Personal results Off'; '1' - 'Personal results On']",
+                    "type": "string",
+                    "title": "Personal Results"
+                },
+                "numResults": {
+                    "description": "Maximum number of results per page.",
+                    "type": "string",
+                    "title": "Results per Page"
+                },
+                "userset": {
+                    "description": "Indicate if user has changed their preferences from the default values. [Values: '0' - 'No'; '1' - 'Yes']",
+                    "type": "string",
+                    "title": "Preferences changed"
+                },
+                "safeSearch": {
+                    "description": "SafeSearch helps you avoid explicit content in Search results. We can't catch everything, but the filter helps keep adult content out. [Values: '0' - 'Off - do not filter results'; '1' - 'Moderate - no adult images or video'; '2' - 'Strict - no adult content']",
+                    "type": "string",
+                    "title": "Safe search"
+                },
+                "version": {
+                    "description": "Version of Preferences schema.",
+                    "type": "string",
+                    "title": "Schema version"
+                },
+                "useSelectedLanguages": {
+                    "description": "Indicates if search results should be in selected languages or any languages. [Values: '0' - 'Search results in any language'; '1' - 'Search results in selected language(s)']",
+                    "type": "string",
+                    "title": "Selected or any languages"
+                },
+                "personalResultsTimestamp": {
+                    "description": "Timestamp of changing personal results preference to 0",
+                    "type": "string",
+                    "title": "Personal Results Timestamp"
+                }
+            }
         }
     },
-    "$id": "http://gdpr.answers.yahoo.com/answers-gdpr-access#"
+    "$id": "http://gdpr.search.yahoo.com/search_access_schema_v0.9#"
 }
